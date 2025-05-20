@@ -34,36 +34,44 @@
   </style>
 </head>
 <body class="bg-background text-neutral">
-  <!-- HEADER -->
+ <!-- HEADER -->
   <header class="bg-white shadow-md">
     <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
       <div class="flex items-center gap-4">
         <img src="logo.png" alt="Logo Tu nuevo hogar" class="w-14 h-14 object-contain" />
         <div>
-          <h1 class="text-2xl font-bold text-primary">Tu nuevo hogar</h1>
-          <p class="text-sm text-gray-600">Atención al detalle en cada proyecto</p>
+          <h1 class="text-2xl font-bold text-primary" data-i18n="brand">Tu nuevo hogar</h1>
+          <p class="text-sm text-gray-600" data-i18n="tagline">Atención al detalle en cada proyecto</p>
         </div>
       </div>
+
+      <!-- Header right -->
       <div class="flex items-center gap-4">
-        <a href="https://wa.me/+34626035354" target="_blank" aria-label="WhatsApp Alemán">
+        <!-- Language Buttons -->
+        <button data-lang="es" class="flex flex-col items-center text-xs focus:outline-none">
+          <img src="lang-es.png" alt="Español" class="w-6 h-6 md:w-8 md:h-8 object-contain" />
+          <span class="mt-1">Español</span>
+        </button>
+        <button data-lang="de" class="flex flex-col items-center text-xs focus:outline-none">
+          <img src="lang-de.png" alt="Deutsch" class="w-6 h-6 md:w-8 md:h-8 object-contain" />
+          <span class="mt-1">Deutsch</span>
+        </button>
+        <button data-lang="en" class="flex flex-col items-center text-xs focus:outline-none">
+          <img src="lang-en.png" alt="English" class="w-6 h-6 md:w-8 md:h-8 object-contain" />
+          <span class="mt-1">English</span>
+        </button>
+        <!-- WhatsApp Alemán -->
+        <a href="https://wa.me/34626035354" target="_blank" aria-label="WhatsApp Alemán">
           <img src="boton-whatsapp-aleman.png" alt="WhatsApp Alemán" class="w-10 h-10 md:w-12 md:h-12 object-contain" />
         </a>
-        <a href="https://wa.me/+34672031241" target="_blank" aria-label="WhatsApp Inglés">
+        <!-- WhatsApp Inglés -->
+        <a href="https://wa.me/34672031241" target="_blank" aria-label="WhatsApp Inglés">
           <img src="boton-whatsapp-reino-unido.png" alt="WhatsApp Inglés" class="w-10 h-10 md:w-12 md:h-12 object-contain" />
         </a>
       </div>
     </div>
-    <p class="text-center text-xs pb-2">También atendemos en español</p>
+    <p class="text-center text-xs pb-2" data-i18n="service_notice">También atendemos en español</p>
   </header>
-
-  <!-- HERO / CTA PRINCIPAL -->
-  <section id="hero" class="bg-primary text-white py-16">
-    <div class="max-w-6xl mx-auto text-center space-y-4 px-4">
-      <h2 class="text-4xl font-semibold">Convierte tu vivienda en el hogar de tus sueños</h2>
-      <p class="text-lg">Confía en nuestro equipo para llevar tu proyecto de reforma al siguiente nivel.</p>
-      <a href="#contacto" class="inline-block bg-accent text-white px-6 py-3 rounded-2xl shadow-lg hover:scale-105 transition">Solicita tu presupuesto gratis</a>
-    </div>
-  </section>
 
   <!-- SERVICIOS -->
   <section id="servicios" class="py-16">
