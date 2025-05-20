@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Empresa de reformas en Alicante – Tu nuevo hogar" />
+  <title>Tu nuevo hogar – Reformas</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            primary: '#fb9010',
+            secondary: '#e7d00d',
+            accent: '#ff0f0e',
+            neutral: '#000000',
+            background: '#f1f1f1',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-background text-neutral">
+  <!-- HEADER -->
+  <header class="bg-white shadow-md">
+    <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <div class="flex items-center gap-4">
+        <img src="logo.png" alt="Logo Tu nuevo hogar" class="w-14 h-14 object-contain" />
+        <div>
+          <h1 class="text-2xl font-bold text-primary">Tu nuevo hogar</h1>
+          <p class="text-sm text-gray-600">🎯 Atención al detalle en cada proyecto</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://wa.me/49123456789" target="_blank" aria-label="WhatsApp Alemán">
+          <img src="boton whatsapp aleman" alt="WhatsApp Alemán" class="w-10 h-10" />
+        </a>
+        <a href="https://wa.me/447123456789" target="_blank" aria-label="WhatsApp Inglés">
+          <img src="boton whatsapp reino unido" alt="WhatsApp Inglés" class="w-10 h-10" />
+        </a>
+      </div>
+    </div>
+    <p class="text-center text-xs pb-2">💬 También atendemos en español</p>
+  </header>
+
+  <!-- HERO / CTA PRINCIPAL -->
+  <section id="hero" class="bg-primary text-white py-16">
+    <div class="max-w-6xl mx-auto text-center space-y-4 px-4">
+      <h2 class="text-4xl font-semibold">¡Convierte tu vivienda en el hogar de tus sueños! 🏠✨</h2>
+      <p class="text-lg">Confía en nuestro equipo para llevar tu proyecto de reforma al siguiente nivel.</p>
+      <a href="#contacto" class="inline-block bg-accent text-white px-6 py-3 rounded-2xl shadow-lg hover:scale-105 transition">Solicita tu presupuesto gratis 📄</a>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">Nuestros servicios</h2>
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+          <img src="1.png" alt="Reformas integrales" class="h-48 w-full object-cover" />
+          <div class="p-6 flex-1 flex flex-col">
+            <h3 class="text-xl font-semibold mb-2 text-primary">Reformas integrales de viviendas</h3>
+            <p class="text-sm">Renovamos tu espacio de arriba abajo, cuidando cada detalle y acabados de alta calidad</p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+          <img src="2.png" alt="Cerramientos de aluminio" class="h-48 w-full object-cover" />
+          <div class="p-6 flex-1 flex flex-col">
+            <h3 class="text-xl font-semibold mb-2 text-primary">Cerramientos en carpintería de aluminio</h3>
+            <p class="text-sm">Aislamiento y elegancia para tu hogar con los mejores perfiles de aluminio</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+          <img src="3.png" alt="Cortinas de vidrio" class="h-48 w-full object-cover" />
+          <div class="p-6 flex-1 flex flex-col">
+            <h3 class="text-xl font-semibold mb-2 text-primary">Instalación de cortinas de vidrio</h3>
+            <p class="text-sm">Disfruta de vistas panorámicas y protección todo el año con nuestras cortinas de cristal</p>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+          <img src="4.png" alt="Fontanería" class="h-48 w-full object-cover" />
+          <div class="p-6 flex-1 flex flex-col">
+            <h3 class="text-xl font-semibold mb-2 text-primary">Trabajos de fontanería</h3>
+            <p class="text-sm">Instalaciones y reparaciones con materiales de primera calidad</p>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+          <img src="5.png" alt="Instalaciones eléctricas" class="h-48 w-full object-cover" />
+          <div class="p-6 flex-1 flex flex-col">
+            <h3 class="text-xl font-semibold mb-2 text-primary">Instalaciones eléctricas</h3>
+            <p class="text-sm">Seguridad y eficiencia energética para tu vivienda</p>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+          <img src="6.png" alt="Carpintería de madera" class="h-48 w-full object-cover" />
+          <div class="p-6 flex-1 flex flex-col">
+            <h3 class="text-xl font-semibold mb-2 text-primary">Carpintería de madera a medida</h3>
+            <p class="text-sm">Muebles y acabados únicos que reflejan tu estilo personal</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="py-16 bg-background">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">Nuestros proyectos recientes 🏗️</h2>
+      <p class="text-center">Estamos preparando una galería con nuestras últimas obras. ¡Vuelve pronto para inspirarte! ✨</p>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">Contacta con nosotros 📞</h2>
+      <div class="flex flex-col items-center gap-6">
+        <a href="https://wa.me/34626035354" class="flex items-center gap-3 bg-primary text-white px-6 py-3 rounded-2xl shadow hover:scale-105 transition">
+          📱 +34 626 03 53 54 <span class="text-sm">(Español / Alemán)</span>
+        </a>
+        <a href="https://wa.me/34672031241" class="flex items-center gap-3 bg-primary text-white px-6 py-3 rounded-2xl shadow hover:scale-105 transition">
+          📱 +34 672 03 12 41 <span class="text-sm">(Español / Inglés)</span>
+        </a>
+        <a href="mailto:henryvaldeslopez@gmail.com" class="flex items-center gap-3 bg-accent text-white px-6 py-3 rounded-2xl shadow hover:scale-105 transition">
+          📧 henryvaldeslopez@gmail.com
+        </a>
+      </div>
+      <!-- Mapa -->
+      <div class="mt-10">
+        <h3 class="text-xl font-semibold mb-4 text-center">Nuestra ubicación en Alicante 📍</h3>
+        <div class="aspect-w-16 aspect-h-9 bg-background border rounded-2xl flex items-center justify-center text-gray-500">
+          <!-- Reemplazar con Google Maps embed -->
+          <span class="p-4">Mapa próximamente</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE NOSOTROS -->
+  <section id="sobre-nosotros" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">Sobre nosotros 👷‍♂️</h2>
+      <div class="flex flex-col md:flex-row items-center gap-10">
+        <div class="flex-1 flex justify-center gap-6">
+          <img src="foto 1.png" alt="Nuestro equipo" class="w-40 h-40 object-cover rounded-full shadow-lg" />
+          <img src="foto 2.png" alt="Nuestro equipo" class="w-40 h-40 object-cover rounded-full shadow-lg" />
+        </div>
+        <div class="flex-1">
+          <p class="text-lg leading-relaxed">Con años de experiencia en <span class="text-primary font-semibold">albañilería</span>, <span class="text-primary font-semibold">cerramientos de aluminio</span> e <span class="text-primary font-semibold">instalaciones de cortinas de cristal</span>, nuestro equipo se dedica a crear espacios que combinan funcionalidad y estética. Tu satisfacción es nuestro mayor orgullo. 💪🏡</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-neutral text-white py-6">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p class="text-sm">© 2025 Tu nuevo hogar. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
