@@ -47,19 +47,7 @@
 
       <!-- Header right -->
       <div class="flex items-center gap-4">
-        <!-- Language Buttons -->
-        <button data-lang="es" class="flex flex-col items-center text-xs focus:outline-none">
-          <img src="lang-es.png" alt="Español" class="w-6 h-6 md:w-8 md:h-8 object-contain" />
-          <span class="mt-1">Español</span>
-        </button>
-        <button data-lang="de" class="flex flex-col items-center text-xs focus:outline-none">
-          <img src="lang-de.png" alt="Deutsch" class="w-6 h-6 md:w-8 md:h-8 object-contain" />
-          <span class="mt-1">Deutsch</span>
-        </button>
-        <button data-lang="en" class="flex flex-col items-center text-xs focus:outline-none">
-          <img src="lang-en.png" alt="English" class="w-6 h-6 md:w-8 md:h-8 object-contain" />
-          <span class="mt-1">English</span>
-        </button>
+      
         <!-- WhatsApp Alemán -->
         <a href="https://wa.me/34626035354" target="_blank" aria-label="WhatsApp Alemán">
           <img src="boton-whatsapp-aleman.png" alt="WhatsApp Alemán" class="w-10 h-10 md:w-12 md:h-12 object-contain" />
@@ -72,6 +60,25 @@
     </div>
     <p class="text-center text-xs pb-2" data-i18n="service_notice">También atendemos en español</p>
   </header>
+  
+  <!-- SELECTOR DE IDIOMA (barra independiente) -->
+  <section id="selector-idioma" class="py-6 bg-white border-b">
+    <div class="max-w-6xl mx-auto flex items-center justify-center gap-8">
+      <!-- Language Buttons -->
+      <button data-lang="es" class="flex flex-col items-center text-xs focus:outline-none">
+        <img src="lang-es.png" alt="Español" class="w-8 h-8 md:w-10 md:h-10 object-contain" />
+        <span class="mt-1">Español</span>
+      </button>
+      <button data-lang="de" class="flex flex-col items-center text-xs focus:outline-none">
+        <img src="lang-de.png" alt="Deutsch" class="w-8 h-8 md:w-10 md:h-10 object-contain" />
+        <span class="mt-1">Deutsch</span>
+      </button>
+      <button data-lang="en" class="flex flex-col items-center text-xs focus:outline-none">
+        <img src="lang-en.png" alt="English" class="w-8 h-8 md:w-10 md:h-10 object-contain" />
+        <span class="mt-1">English</span>
+      </button>
+    </div>
+  </section>
 
   <!-- SERVICIOS -->
   <section id="servicios" class="py-16">
