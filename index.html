@@ -7,17 +7,21 @@
   <meta name="description" content="Reformas integrales, cerramientos de aluminio y carpintería en Alicante. Transformamos tu casa en el hogar de tus sueños." />
   <meta name="keywords" content="reformas en Alicante, reformas integrales, cerramientos aluminio, carpintería, albañilería, cortinas de vidrio" />
   <link rel="canonical" href="https://tunuevohogar.es/" />
+
   <!-- Open Graph / Twitter -->
   <meta property="og:title" content="Tu nuevo hogar – Reformas en Alicante" />
   <meta property="og:description" content="Expertos en reformas integrales, cerramientos e instalaciones. Presupuesto gratuito en 24 h." />
   <meta property="og:image" content="https://tunuevohogar.es/share.jpg" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
+
   <title>Tu nuevo hogar – Reformas en Alicante</title>
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -25,14 +29,12 @@
       darkMode: 'class',
       theme: {
         extend: {
-          fontFamily: {
-            poppins: ['Poppins', 'sans-serif'],
-          },
+          fontFamily: { poppins: ['Poppins', 'sans-serif'] },
           colors: {
             primary: '#fb9010',
             secondary: '#e7d00d',
-            accent: '#ff0f0e',
-            neutral: '#000000',
+            accent:   '#ff0f0e',
+            neutral:  '#000000',
             background: '#f1f1f1',
           },
           keyframes: {
@@ -41,27 +43,23 @@
               '100%': { opacity: '1', transform: 'translateY(0)' },
             },
           },
-          animation: {
-            fadeIn: 'fadeIn 0.6s ease-out forwards',
-          },
+          animation: { fadeIn: 'fadeIn 0.6s ease-out forwards' },
         },
       },
     };
   </script>
+
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-    }
-    :focus-visible {
-      outline: 2px solid #fb9010;
-      outline-offset: 2px;
-    }
+    body { font-family: 'Poppins', sans-serif; }
+    :focus-visible { outline: 2px solid #fb9010; outline-offset: 2px; }
   </style>
 </head>
 <body class="bg-background text-neutral dark:text-gray-100 selection:bg-primary/20">
+
   <!-- HEADER -->
   <header class="bg-white shadow-md sticky top-0 z-50 dark:bg-neutral dark:shadow-none">
     <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+
       <!-- Logo & brand -->
       <div class="flex items-center gap-4">
         <img src="logo.png" alt="Logo Tu nuevo hogar" class="w-14 h-14 object-contain" loading="lazy" />
@@ -70,6 +68,7 @@
           <p class="text-sm text-gray-600 dark:text-gray-300" data-i18n="tagline">Atención al detalle en cada proyecto</p>
         </div>
       </div>
+
       <!-- Icons right -->
       <div class="flex items-center gap-2 md:gap-4">
         <!-- Theme toggle -->
@@ -78,10 +77,12 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h1M3 12H2m15.36 6.36l.71.71M6.34 6.34l-.71-.71m0 12.02l.71-.71M17.66 6.34l-.71-.71M12 5a7 7 0 100 14 7 7 0 000-14z" />
           </svg>
         </button>
+
         <!-- WhatsApp Alemán -->
         <a href="https://wa.me/34626035354" target="_blank" aria-label="WhatsApp Alemán" class="transform hover:scale-110 transition">
           <img src="boton-whatsapp-aleman.png" alt="WhatsApp Alemán" class="w-8 h-8 md:w-10 md:h-10 object-contain" loading="lazy" />
         </a>
+
         <!-- WhatsApp Inglés -->
         <a href="https://wa.me/34672031241" target="_blank" aria-label="WhatsApp Inglés" class="transform hover:scale-110 transition">
           <img src="boton-whatsapp-reino-unido.png" alt="WhatsApp Inglés" class="w-8 h-8 md:w-10 md:h-10 object-contain" loading="lazy" />
@@ -114,33 +115,38 @@
       <div class="max-w-6xl mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-10 reveal" data-i18n="services_title">Nuestros servicios</h2>
         <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Card templates-->
-          <!-- ... (seis tarjetas, igual que ya existentes) -->
+          <!-- … (tarjetas existentes) … -->
+          <!-- 1 -->
           <div class="bg-white dark:bg-neutral rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform hover:scale-[1.03] transition reveal">
             <img src="1.png" alt="Reformas integrales" class="h-28 w-28 object-contain mb-4" loading="lazy" />
             <h3 class="text-xl font-semibold mb-2 text-primary" data-i18n="card1_title">Reformas integrales de viviendas</h3>
             <p class="text-sm" data-i18n="card1_desc">Renovamos tu espacio por completo, cuidando cada detalle y acabados de alta calidad.</p>
           </div>
+          <!-- 2 -->
           <div class="bg-white dark:bg-neutral rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform hover:scale-[1.03] transition reveal">
             <img src="2.png" alt="Cerramientos de aluminio" class="h-28 w-28 object-contain mb-4" loading="lazy" />
             <h3 class="text-xl font-semibold mb-2 text-primary" data-i18n="card2_title">Cerramientos en carpintería de aluminio</h3>
             <p class="text-sm" data-i18n="card2_desc">Aislamiento y elegancia para tu hogar con los mejores perfiles de aluminio.</p>
           </div>
+          <!-- 3 -->
           <div class="bg-white dark:bg-neutral rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform hover:scale-[1.03] transition reveal">
             <img src="3.png" alt="Cortinas de vidrio" class="h-28 w-28 object-contain mb-4" loading="lazy" />
             <h3 class="text-xl font-semibold mb-2 text-primary" data-i18n="card3_title">Instalación de cortinas de vidrio</h3>
             <p class="text-sm" data-i18n="card3_desc">Disfruta de vistas panorámicas y protección todo el año con nuestras cortinas de cristal.</p>
           </div>
+          <!-- 4 -->
           <div class="bg-white dark:bg-neutral rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform hover:scale-[1.03] transition reveal">
             <img src="4.png" alt="Fontanería" class="h-28 w-28 object-contain mb-4" loading="lazy" />
             <h3 class="text-xl font-semibold mb-2 text-primary" data-i18n="card4_title">Trabajos de fontanería</h3>
             <p class="text-sm" data-i18n="card4_desc">Instalaciones y reparaciones confiables con materiales de primera calidad.</p>
           </div>
+          <!-- 5 -->
           <div class="bg-white dark:bg-neutral rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform hover:scale-[1.03] transition reveal">
             <img src="5.png" alt="Instalaciones eléctricas" class="h-28 w-28 object-contain mb-4" loading="lazy" />
             <h3 class="text-xl font-semibold mb-2 text-primary" data-i18n="card5_title">Instalaciones eléctricas</h3>
             <p class="text-sm" data-i18n="card5_desc">Seguridad y eficiencia energética para tu vivienda.</p>
           </div>
+          <!-- 6 -->
           <div class="bg-white dark:bg-neutral rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform hover:scale-[1.03] transition reveal">
             <img src="6.png" alt="Carpintería de madera" class="h-28 w-28 object-contain mb-4" loading="lazy" />
             <h3 class="text-xl font-semibold mb-2 text-primary" data-i18n="card6_title">Carpintería de madera a medida</h3>
@@ -162,22 +168,39 @@
     <section id="contacto" class="py-16 bg-white dark:bg-neutral">
       <div class="max-w-6xl mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-10 reveal" data-i18n="contact_title">Contacta con nosotros</h2>
+
         <div class="flex flex-col items-center gap-6 reveal">
-          <a href="https://wa.me/34626035354" class="flex items-center gap-3 bg-primary text-white px-6 py-3 rounded-2xl shadow-lg hover:scale-105 transition" data-i18n="btn_wa1">
-            +34 626 03 53 54 <span class="text-sm">(Español / Alemán)</span>
+          <!-- Botón ES / DE -->
+          <a href="https://wa.me/34626035354" class="flex items-center gap-3 bg-primary text-white px-6 py-3 rounded-2xl shadow-lg hover:scale-105 transition">
+            <img src="boton-whatsapp-aleman.png" alt="WhatsApp Español/Alemán" class="w-6 h-6 object-contain" loading="lazy" />
+            +34&nbsp;626&nbsp;03&nbsp;53&nbsp;54
+            <span class="flex items-center gap-1">
+              <img src="lang-es.png" alt="Español"  class="w-5 h-5 object-contain" loading="lazy" />
+              <img src="lang-de.png" alt="Deutsch" class="w-5 h-5 object-contain" loading="lazy" />
+            </span>
           </a>
-          <a href="https://wa.me/34672031241" class="flex items-center gap-3 bg-primary text-white px-6 py-3 rounded-2xl shadow-lg hover:scale-105 transition" data-i18n="btn_wa2">
-            +34 672 03 12 41 <span class="text-sm">(Español / Inglés)</span>
+
+          <!-- Botón ES / EN -->
+          <a href="https://wa.me/34672031241" class="flex items-center gap-3 bg-primary text-white px-6 py-3 rounded-2xl shadow-lg hover:scale-105 transition">
+            <img src="boton-whatsapp-reino-unido.png" alt="WhatsApp Español/Inglés" class="w-6 h-6 object-contain" loading="lazy" />
+            +34&nbsp;672&nbsp;03&nbsp;12&nbsp;41
+            <span class="flex items-center gap-1">
+              <img src="lang-es.png" alt="Español" class="w-5 h-5 object-contain" loading="lazy" />
+              <img src="lang-en.png" alt="English" class="w-5 h-5 object-contain" loading="lazy" />
+            </span>
           </a>
-          <a href="mailto:henryvaldeslopez@gmail.com" class="flex items-center gap-3 bg-accent text-white px-6 py-3 rounded-2xl shadow-lg hover:scale-105 transition" data-i18n="email_text">
+
+          <!-- Correo -->
+          <a href="mailto:henryvaldeslopez@gmail.com" class="flex items-center gap-3 bg-accent text-white px-6 py-3 rounded-2xl shadow-lg hover:scale-105 transition">
             henryvaldeslopez@gmail.com
           </a>
         </div>
+
         <!-- MAPA DE ALICANTE -->
         <div class="mt-10 reveal">
           <h3 class="text-xl font-semibold mb-4 text-center" data-i18n="location_title">Nuestra ubicación en Alicante y alrededores</h3>
           <div class="aspect-w-16 aspect-h-9 bg-background border rounded-2xl overflow-hidden shadow-lg">
-          <iframe class="w-full h-full" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Alicante%2C%20Spain&z=8&output=embed"></iframe>
+            <iframe class="w-full h-full" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Alicante%2C%20Spain&z=8&output=embed"></iframe>
           </div>
         </div>
       </div>
@@ -193,7 +216,13 @@
             <img src="foto 2.png" alt="Sonrisa del equipo tras terminar un proyecto" class="w-40 h-40 object-cover rounded-full shadow-lg" loading="lazy" />
           </div>
           <div class="flex-1 reveal">
-            <p class="text-lg leading-relaxed" data-i18n="about_desc">Con años de experiencia en <span class="text-primary font-semibold">albañilería</span>, <span class="text-primary font-semibold">cerramientos de aluminio</span> e <span class="text-primary font-semibold">instalación de cortinas de vidrio</span>, nuestro equipo se dedica a crear espacios que combinan funcionalidad y estética. Tu satisfacción es nuestro mayor orgullo. 💪🏡</p>
+            <p class="text-lg leading-relaxed" data-i18n="about_desc">
+              Con años de experiencia en <span class="text-primary font-semibold">albañilería</span>,
+              <span class="text-primary font-semibold">cerramientos de aluminio</span> e
+              <span class="text-primary font-semibold">instalación de cortinas de vidrio</span>,
+              nuestro equipo se dedica a crear espacios que combinan funcionalidad y estética.
+              Tu satisfacción es nuestro mayor orgullo. 💪🏡
+            </p>
           </div>
         </div>
       </div>
@@ -209,7 +238,7 @@
 
   <!-- SCRIPTS -->
   <script>
-    // --- Internationalisation ---
+    /* ---------- Internationalisation ---------- */
     const translations = {
       es: {
         brand: "Tu nuevo hogar",
@@ -230,9 +259,6 @@
         projects_title: "Nuestros proyectos recientes",
         projects_desc: "Estamos preparando una galería con nuestras últimas obras. ¡Vuelve pronto para inspirarte!",
         contact_title: "Contacta con nosotros",
-        btn_wa1: "+34 626 03 53 54 (Español / Alemán)",
-        btn_wa2: "+34 672 03 12 41 (Español / Inglés)",
-        email_text: "henryvaldeslopez@gmail.com",
         location_title: "Nuestra ubicación en Alicante y alrededores",
         about_title: "Sobre nosotros 👷‍♂️",
         about_desc: "Con años de experiencia en <span class='text-primary font-semibold'>albañilería</span>, <span class='text-primary font-semibold'>cerramientos de aluminio</span> e <span class='text-primary font-semibold'>instalación de cortinas de vidrio</span>, nuestro equipo se dedica a crear espacios que combinan funcionalidad y estética. Tu satisfacción es nuestro mayor orgullo. 💪🏡",
@@ -256,9 +282,6 @@
         projects_title: "Unsere aktuellen Projekte",
         projects_desc: "Wir bereiten eine Galerie unserer neuesten Arbeiten vor. Schau bald wieder vorbei und lass Dich inspirieren!",
         contact_title: "Kontaktiere uns",
-        btn_wa1: "+34 626 03 53 54 (Spanisch / Deutsch)",
-        btn_wa2: "+34 672 03 12 41 (Spanisch / Englisch)",
-        email_text: "henryvaldeslopez@gmail.com",
         location_title: "Unser Standort in Alicante und Umgebung",
         about_title: "Über uns 👷‍♂️",
         about_desc: "Mit jahrelanger Erfahrung in <span class='text-primary font-semibold'>Maurerarbeiten</span>, <span class='text-primary font-semibold'>Aluminiumkonstruktionen</span> und <span class='text-primary font-semibold'>Glasvorhängen</span> schaffen wir Räume, die Funktionalität und Ästhetik vereinen. Deine Zufriedenheit ist unser größter Stolz. 💪🏡",
@@ -282,13 +305,10 @@
         projects_title: "Our recent projects",
         projects_desc: "We're preparing a gallery of our latest work. Come back soon for inspiration!",
         contact_title: "Get in touch",
-        btn_wa1: "+34 626 03 53 54 (Spanish / German)",
-        btn_wa2: "+34 672 03 12 41 (Spanish / English)",
-        email_text: "henryvaldeslopez@gmail.com",
         location_title: "Our location in Alicante and surroundings",
         about_title: "About us 👷‍♂️",
         about_desc: "With years of experience in <span class='text-primary font-semibold'>masonry</span>, <span class='text-primary font-semibold'>aluminium enclosures</span> and <span class='text-primary font-semibold'>glass curtain installation</span>, our team creates spaces that combine functionality and aesthetics. Your satisfaction is our greatest pride. 💪🏡",
-      },
+      }
     };
 
     function setLang(lang) {
@@ -307,22 +327,26 @@
       localStorage.setItem('lang', lang);
     }
 
-    document.querySelectorAll('#selector-idioma button').forEach(btn => btn.addEventListener('click', () => setLang(btn.dataset.lang)));
+    document.querySelectorAll('#selector-idioma button').forEach(btn =>
+      btn.addEventListener('click', () => setLang(btn.dataset.lang))
+    );
     setLang(localStorage.getItem('lang') || 'es');
 
-    // Dark mode toggle
+    /* ---------- Dark mode toggle ---------- */
     (() => {
       const root = document.documentElement;
       const toggle = document.getElementById('theme-toggle');
       const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && prefersDark)) root.classList.add('dark');
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && prefersDark)) {
+        root.classList.add('dark');
+      }
       toggle.addEventListener('click', () => {
         const isDark = root.classList.toggle('dark');
         localStorage.theme = isDark ? 'dark' : 'light';
       });
     })();
 
-    // Scroll reveal
+    /* ---------- Scroll reveal ---------- */
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
