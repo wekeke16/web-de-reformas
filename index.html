@@ -9,7 +9,7 @@
   <link rel="canonical" href="https://tunuevohogar.es/" />
   <!-- Open Graph / Twitter -->
   <meta property="og:title" content="Tu nuevo hogar – Reformas en Alicante" />
-  <meta property="og:description" content="Expertos en reformas integrales, cerramientos e instalaciones. Presupuesto gratuito en 24 h." />
+  <meta property="og:description" content="Expertos en reformas integrales, cerramientos e instalaciones. Presupuesto gratuito en 24 h." />
   <meta property="og:image" content="https://tunuevohogar.es/share.jpg" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -62,6 +62,7 @@
   <!-- HEADER -->
   <header class="bg-white shadow-md sticky top-0 z-50 dark:bg-neutral dark:shadow-none">
     <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <!-- Logo & brand -->
       <div class="flex items-center gap-4">
         <img src="logo.png" alt="Logo Tu nuevo hogar" class="w-14 h-14 object-contain" loading="lazy" />
         <div>
@@ -69,8 +70,9 @@
           <p class="text-sm text-gray-600 dark:text-gray-300" data-i18n="tagline">Atención al detalle en cada proyecto</p>
         </div>
       </div>
-     <!-- Header right -->
+      <!-- Icons right -->
       <div class="flex items-center gap-2 md:gap-4">
+        <!-- Theme toggle -->
         <button id="theme-toggle" aria-label="Cambiar tema" class="w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-black text-white dark:bg-white dark:text-black hover:bg-primary/20 dark:hover:bg-primary/20 transform hover:scale-110 transition">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none" class="w-5 h-5">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h1M3 12H2m15.36 6.36l.71.71M6.34 6.34l-.71-.71m0 12.02l.71-.71M17.66 6.34l-.71-.71M12 5a7 7 0 100 14 7 7 0 000-14z" />
@@ -88,10 +90,9 @@
     </div>
   </header>
 
-  <!-- SELECTOR DE IDIOMA (barra independiente) -->
+  <!-- SELECTOR DE IDIOMA -->
   <section id="selector-idioma" class="py-4 bg-white border-b dark:bg-neutral">
     <div class="max-w-6xl mx-auto flex items-center justify-center gap-8">
-      <!-- Language Buttons -->
       <button data-lang="es" class="flex flex-col items-center text-xs focus:outline-none group">
         <img src="lang-es.png" alt="Español" class="w-8 h-8 md:w-10 md:h-10 object-contain group-hover:scale-110 transition" loading="lazy" />
         <span class="mt-1">Español</span>
@@ -113,37 +114,33 @@
       <div class="max-w-6xl mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-10 reveal" data-i18n="services_title">Nuestros servicios</h2>
         <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Card 1 -->
+          <!-- Card templates-->
+          <!-- ... (seis tarjetas, igual que ya existentes) -->
           <div class="bg-white dark:bg-neutral rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform hover:scale-[1.03] transition reveal">
             <img src="1.png" alt="Reformas integrales" class="h-28 w-28 object-contain mb-4" loading="lazy" />
             <h3 class="text-xl font-semibold mb-2 text-primary" data-i18n="card1_title">Reformas integrales de viviendas</h3>
             <p class="text-sm" data-i18n="card1_desc">Renovamos tu espacio por completo, cuidando cada detalle y acabados de alta calidad.</p>
           </div>
-          <!-- Card 2 -->
           <div class="bg-white dark:bg-neutral rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform hover:scale-[1.03] transition reveal">
             <img src="2.png" alt="Cerramientos de aluminio" class="h-28 w-28 object-contain mb-4" loading="lazy" />
             <h3 class="text-xl font-semibold mb-2 text-primary" data-i18n="card2_title">Cerramientos en carpintería de aluminio</h3>
             <p class="text-sm" data-i18n="card2_desc">Aislamiento y elegancia para tu hogar con los mejores perfiles de aluminio.</p>
           </div>
-          <!-- Card 3 -->
           <div class="bg-white dark:bg-neutral rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform hover:scale-[1.03] transition reveal">
             <img src="3.png" alt="Cortinas de vidrio" class="h-28 w-28 object-contain mb-4" loading="lazy" />
             <h3 class="text-xl font-semibold mb-2 text-primary" data-i18n="card3_title">Instalación de cortinas de vidrio</h3>
             <p class="text-sm" data-i18n="card3_desc">Disfruta de vistas panorámicas y protección todo el año con nuestras cortinas de cristal.</p>
           </div>
-          <!-- Card 4 -->
           <div class="bg-white dark:bg-neutral rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform hover:scale-[1.03] transition reveal">
             <img src="4.png" alt="Fontanería" class="h-28 w-28 object-contain mb-4" loading="lazy" />
             <h3 class="text-xl font-semibold mb-2 text-primary" data-i18n="card4_title">Trabajos de fontanería</h3>
             <p class="text-sm" data-i18n="card4_desc">Instalaciones y reparaciones confiables con materiales de primera calidad.</p>
           </div>
-          <!-- Card 5 -->
           <div class="bg-white dark:bg-neutral rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform hover:scale-[1.03] transition reveal">
             <img src="5.png" alt="Instalaciones eléctricas" class="h-28 w-28 object-contain mb-4" loading="lazy" />
             <h3 class="text-xl font-semibold mb-2 text-primary" data-i18n="card5_title">Instalaciones eléctricas</h3>
             <p class="text-sm" data-i18n="card5_desc">Seguridad y eficiencia energética para tu vivienda.</p>
           </div>
-          <!-- Card 6 -->
           <div class="bg-white dark:bg-neutral rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform hover:scale-[1.03] transition reveal">
             <img src="6.png" alt="Carpintería de madera" class="h-28 w-28 object-contain mb-4" loading="lazy" />
             <h3 class="text-xl font-semibold mb-2 text-primary" data-i18n="card6_title">Carpintería de madera a medida</h3>
@@ -176,11 +173,12 @@
             henryvaldeslopez@gmail.com
           </a>
         </div>
+        <!-- MAPA DE ALICANTE -->
         <div class="mt-10 reveal">
           <h3 class="text-xl font-semibold mb-4 text-center" data-i18n="location_title">Nuestra ubicación en Alicante</h3>
-          <div class="aspect-w-16 aspect-h-9 bg-background border rounded-2xl flex items-center justify-center text-gray-500 dark:text-gray-300">
-            <!-- Reemplazar con Google Maps embed -->
-            <span class="p-4" data-i18n="map_coming">Mapa próximamente</span>
+          <div class="aspect-w-16 aspect-h-9 bg-background border rounded-2xl overflow-hidden shadow-lg">
+            <iframe class="w-full h-full" loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3182.3219074250015!2d-0.4906781844900919!3d38.34599697965806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6236fa4f0be815%3A0x402af1681de5c90!2sAlicante!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses"></iframe>
           </div>
         </div>
       </div>
@@ -217,7 +215,6 @@
       es: {
         brand: "Tu nuevo hogar",
         tagline: "Atención al detalle en cada proyecto",
-        service_notice: "También atendemos en español",
         services_title: "Nuestros servicios",
         card1_title: "Reformas integrales de viviendas",
         card1_desc: "Renovamos tu espacio por completo, cuidando cada detalle y acabados de alta calidad.",
@@ -238,14 +235,12 @@
         btn_wa2: "+34 672 03 12 41 (Español / Inglés)",
         email_text: "henryvaldeslopez@gmail.com",
         location_title: "Nuestra ubicación en Alicante",
-        map_coming: "Mapa próximamente",
         about_title: "Sobre nosotros 👷‍♂️",
         about_desc: "Con años de experiencia en <span class='text-primary font-semibold'>albañilería</span>, <span class='text-primary font-semibold'>cerramientos de aluminio</span> e <span class='text-primary font-semibold'>instalación de cortinas de vidrio</span>, nuestro equipo se dedica a crear espacios que combinan funcionalidad y estética. Tu satisfacción es nuestro mayor orgullo. 💪🏡",
       },
       de: {
         brand: "Dein neues Zuhause",
         tagline: "Liebe zum Detail in jedem Projekt",
-        service_notice: "Wir beraten Dich auch auf Spanisch",
         services_title: "Unsere Leistungen",
         card1_title: "Komplettsanierungen von Wohnungen",
         card1_desc: "Wir renovieren Deinen Raum vollständig mit Liebe zum Detail und hochwertigen Oberflächen.",
@@ -266,23 +261,21 @@
         btn_wa2: "+34 672 03 12 41 (Spanisch / Englisch)",
         email_text: "henryvaldeslopez@gmail.com",
         location_title: "Unser Standort in Alicante",
-        map_coming: "Karte kommt bald",
         about_title: "Über uns 👷‍♂️",
         about_desc: "Mit jahrelanger Erfahrung in <span class='text-primary font-semibold'>Maurerarbeiten</span>, <span class='text-primary font-semibold'>Aluminiumkonstruktionen</span> und <span class='text-primary font-semibold'>Glasvorhängen</span> schaffen wir Räume, die Funktionalität und Ästhetik vereinen. Deine Zufriedenheit ist unser größter Stolz. 💪🏡",
       },
       en: {
         brand: "Your new home",
         tagline: "Attention to detail in every project",
-        service_notice: "Service also available in Spanish",
         services_title: "Our services",
         card1_title: "Full home renovations",
-        card1_desc: "We transform your space completely, caring for every detail with high‑quality finishes.",
+        card1_desc: "We transform your space completely, caring for every detail with high-quality finishes.",
         card2_title: "Aluminium joinery enclosures",
         card2_desc: "Insulation and elegance for your home using premium aluminium profiles.",
         card3_title: "Glass curtain installation",
-        card3_desc: "Enjoy panoramic views and year‑round protection with our glass curtains.",
+        card3_desc: "Enjoy panoramic views and year-round protection with our glass curtains.",
         card4_title: "Plumbing works",
-        card4_desc: "Reliable installations and repairs using top‑grade materials.",
+        card4_desc: "Reliable installations and repairs using top-grade materials.",
         card5_title: "Electrical installations",
         card5_desc: "Safety and energy efficiency for your residence.",
         card6_title: "Custom wood carpentry",
@@ -294,21 +287,20 @@
         btn_wa2: "+34 672 03 12 41 (Spanish / English)",
         email_text: "henryvaldeslopez@gmail.com",
         location_title: "Our location in Alicante",
-        map_coming: "Map coming soon",
         about_title: "About us 👷‍♂️",
         about_desc: "With years of experience in <span class='text-primary font-semibold'>masonry</span>, <span class='text-primary font-semibold'>aluminium enclosures</span> and <span class='text-primary font-semibold'>glass curtain installation</span>, our team creates spaces that combine functionality and aesthetics. Your satisfaction is our greatest pride. 💪🏡",
-      }
+      },
     };
 
     function setLang(lang) {
       document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.dataset.i18n;
-        const translation = translations[lang][key];
-        if (translation) {
+        const t = translations[lang][key];
+        if (t) {
           if (el.tagName.toLowerCase() === 'input') {
-            el.placeholder = translation;
+            el.placeholder = t;
           } else {
-            el.innerHTML = translation;
+            el.innerHTML = t;
           }
         }
       });
@@ -316,27 +308,22 @@
       localStorage.setItem('lang', lang);
     }
 
-    document.querySelectorAll('#selector-idioma button').forEach(btn => {
-      btn.addEventListener('click', () => setLang(btn.dataset.lang));
-    });
-
+    document.querySelectorAll('#selector-idioma button').forEach(btn => btn.addEventListener('click', () => setLang(btn.dataset.lang)));
     setLang(localStorage.getItem('lang') || 'es');
 
-    // --- Dark Mode ---
+    // Dark mode toggle
     (() => {
       const root = document.documentElement;
       const toggle = document.getElementById('theme-toggle');
       const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && prefersDark)) {
-        root.classList.add('dark');
-      }
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && prefersDark)) root.classList.add('dark');
       toggle.addEventListener('click', () => {
         const isDark = root.classList.toggle('dark');
         localStorage.theme = isDark ? 'dark' : 'light';
       });
     })();
 
-    // --- Scroll Reveal Animation ---
+    // Scroll reveal
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -345,7 +332,6 @@
         }
       });
     }, { threshold: 0.2 });
-
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   </script>
 </body>
