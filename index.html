@@ -161,8 +161,16 @@
       <div class="max-w-6xl mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-10 reveal" data-i18n="projects_title">Nuestros proyectos recientes</h2>
         <p class="text-center reveal" data-i18n="projects_desc">Estamos preparando una galería con nuestras últimas obras. ¡Vuelve pronto para inspirarte!</p>
+
+        <!-- SUBSECCIÓN CERRAMIENTOS -->
+        <details id="cerramientos" class="mt-8 bg-white dark:bg-neutral rounded-2xl p-4 reveal">
+          <summary class="text-xl font-semibold" data-i18n="cerramientos_title">Cerramientos</summary>
+          <!-- Galería generada por JS -->
+          <div id="cerramientos-gallery" class="mt-6 space-y-8"></div>
+        </details>
       </div>
     </section>
+
 
     <!-- CONTACTO -->
     <section id="contacto" class="py-16 bg-white dark:bg-neutral">
@@ -356,6 +364,50 @@
       });
     }, { threshold: 0.2 });
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+   /* ---------- CERRAMIENTOS GALLERY ---------- */
+    const cerramientosData=[
+      {folder:'1.0', count:5, videos:[4]},
+      {folder:'2.0', count:7, videos:[1,5]},
+      {folder:'3.0', count:6, videos:[]},
+      {folder:'4.0', count:5, videos:[4,5]},
+      {folder:'5.0', count:6, videos:[6]},
+      {folder:'6.0', count:3, videos:[3]},
+      {folder:'7.0', count:6, videos:[3,4]},
+      {folder:'8.0', count:4, videos:[3]},
+      {folder:'9.0', count:2, videos:[2]},
+      {folder:'10.0',count:5, videos:[3,4]},
+      {folder:'11.0',count:4, videos:[4]},
+      {folder:'12.0',count:3, videos:[]},
+      {folder:'13.0',count:4, videos:[4]},
+      {folder:'14.0',count:3, videos:[3]},
+      {folder:'15.0',count:2, videos:[]},
+      {folder:'16.0',count:2, videos:[2]},
+      {folder:'17.0',count:3, videos:[3]},
+      {folder:'18.0',count:2, videos:[2]},
+      {folder:'19.0',count:2, videos:[]}
+    ];
+
+    function buildCerramientosGallery(){
+      const basePath='media/cerramientos/', gallery=document.getElementById('cerramientos-gallery');
+      cerramientosData.forEach(({folder,count,videos})=>{
+        const prefix=folder.split('.')[0];
+        const row=document.createElement('div');row.className='row-scroll';
+        for(let i=1;i<=count;i++){
+          const isVideo=videos.includes(i);
+          const file=`${basePath}${folder}/${prefix}.${i}.${isVideo?'mp4':'jpg'}`;
+          if(isVideo){
+            const vid=document.createElement('video');
+            vid.src=file;vid.controls=true;row.appendChild(vid);
+          }else{
+            const img=document.createElement('img');
+            img.src=file;img.alt=`${translations[document.documentElement.lang].cerramientos_title} ${prefix}.${i}`;
+            img.loading='lazy';row.appendChild(img);
+          }
+        }
+        gallery.appendChild(row);
+      });
+    }
+    document.addEventListener('DOMContentLoaded',buildCerramientosGallery);
   </script>
 </body>
 </html>
