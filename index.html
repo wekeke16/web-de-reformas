@@ -50,19 +50,8 @@
   </script>
 
   <style>
-    body{font-family:'Poppins',sans-serif}
-    :focus-visible{outline:2px solid #fb9010;outline-offset:2px}
-
-    /* --- resumen “details” sin viñetas y con flecha --- */
-    details summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between}
-    details summary::-webkit-details-marker{display:none}
-    details summary::after{content:'›';font-size:1.25rem;line-height:1;transition:transform .3s ease;margin-left:.5rem}
-    details[open] summary::after{transform:rotate(90deg)}
-
-    /* --- Galería horizontal --- */
-    .row-scroll{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:1rem}
-    .row-scroll>*{scroll-snap-align:start;flex:0 0 auto}
-    .row-scroll img,.row-scroll video{height:10rem;border-radius:.75rem;box-shadow:0 2px 8px rgb(0 0 0 / .1)}
+    body { font-family: 'Poppins', sans-serif; }
+    :focus-visible { outline: 2px solid #fb9010; outline-offset: 2px; }
   </style>
 </head>
 <body class="bg-background text-neutral dark:text-gray-100 selection:bg-primary/20">
@@ -125,7 +114,45 @@
     <section id="servicios" class="py-16">
       <div class="max-w-6xl mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-10 reveal" data-i18n="services_title">Nuestros servicios</h2>
-        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3"><!-- … tarjetas existentes … --></div>
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <!-- … (tarjetas existentes) … -->
+          <!-- 1 -->
+          <div class="bg-white dark:bg-neutral rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform hover:scale-[1.03] transition reveal">
+            <img src="1.png" alt="Reformas integrales" class="h-28 w-28 object-contain mb-4" loading="lazy" />
+            <h3 class="text-xl font-semibold mb-2 text-primary" data-i18n="card1_title">Reformas integrales de viviendas</h3>
+            <p class="text-sm" data-i18n="card1_desc">Renovamos tu espacio por completo, cuidando cada detalle y acabados de alta calidad.</p>
+          </div>
+          <!-- 2 -->
+          <div class="bg-white dark:bg-neutral rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform hover:scale-[1.03] transition reveal">
+            <img src="2.png" alt="Cerramientos de aluminio" class="h-28 w-28 object-contain mb-4" loading="lazy" />
+            <h3 class="text-xl font-semibold mb-2 text-primary" data-i18n="card2_title">Cerramientos en carpintería de aluminio</h3>
+            <p class="text-sm" data-i18n="card2_desc">Aislamiento y elegancia para tu hogar con los mejores perfiles de aluminio.</p>
+          </div>
+          <!-- 3 -->
+          <div class="bg-white dark:bg-neutral rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform hover:scale-[1.03] transition reveal">
+            <img src="3.png" alt="Cortinas de vidrio" class="h-28 w-28 object-contain mb-4" loading="lazy" />
+            <h3 class="text-xl font-semibold mb-2 text-primary" data-i18n="card3_title">Instalación de cortinas de vidrio</h3>
+            <p class="text-sm" data-i18n="card3_desc">Disfruta de vistas panorámicas y protección todo el año con nuestras cortinas de cristal.</p>
+          </div>
+          <!-- 4 -->
+          <div class="bg-white dark:bg-neutral rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform hover:scale-[1.03] transition reveal">
+            <img src="4.png" alt="Fontanería" class="h-28 w-28 object-contain mb-4" loading="lazy" />
+            <h3 class="text-xl font-semibold mb-2 text-primary" data-i18n="card4_title">Trabajos de fontanería</h3>
+            <p class="text-sm" data-i18n="card4_desc">Instalaciones y reparaciones confiables con materiales de primera calidad.</p>
+          </div>
+          <!-- 5 -->
+          <div class="bg-white dark:bg-neutral rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform hover:scale-[1.03] transition reveal">
+            <img src="5.png" alt="Instalaciones eléctricas" class="h-28 w-28 object-contain mb-4" loading="lazy" />
+            <h3 class="text-xl font-semibold mb-2 text-primary" data-i18n="card5_title">Instalaciones eléctricas</h3>
+            <p class="text-sm" data-i18n="card5_desc">Seguridad y eficiencia energética para tu vivienda.</p>
+          </div>
+          <!-- 6 -->
+          <div class="bg-white dark:bg-neutral rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform hover:scale-[1.03] transition reveal">
+            <img src="6.png" alt="Carpintería de madera" class="h-28 w-28 object-contain mb-4" loading="lazy" />
+            <h3 class="text-xl font-semibold mb-2 text-primary" data-i18n="card6_title">Carpintería de madera a medida</h3>
+            <p class="text-sm" data-i18n="card6_desc">Muebles y acabados únicos que reflejan tu estilo personal.</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -134,13 +161,6 @@
       <div class="max-w-6xl mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-10 reveal" data-i18n="projects_title">Nuestros proyectos recientes</h2>
         <p class="text-center reveal" data-i18n="projects_desc">Estamos preparando una galería con nuestras últimas obras. ¡Vuelve pronto para inspirarte!</p>
-
-        <!-- SUBSECCIÓN CERRAMIENTOS -->
-        <details id="cerramientos" class="mt-8 bg-white dark:bg-neutral rounded-2xl p-4 reveal">
-          <summary class="text-xl font-semibold" data-i18n="cerramientos_title">Cerramientos</summary>
-          <!-- Galería generada por JS -->
-          <div id="cerramientos-gallery" class="mt-6 space-y-8"></div>
-        </details>
       </div>
     </section>
 
@@ -148,6 +168,7 @@
     <section id="contacto" class="py-16 bg-white dark:bg-neutral">
       <div class="max-w-6xl mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-10 reveal" data-i18n="contact_title">Contacta con nosotros</h2>
+
         <div class="flex flex-col items-center gap-6 reveal">
           <!-- Botón ES / DE -->
           <a href="https://wa.me/34626035354" class="flex items-center gap-3 bg-primary text-white px-6 py-3 rounded-2xl shadow-lg hover:scale-105 transition">
@@ -175,7 +196,7 @@
           </a>
         </div>
 
-        <!-- MAPA -->
+        <!-- MAPA DE ALICANTE -->
         <div class="mt-10 reveal">
           <h3 class="text-xl font-semibold mb-4 text-center" data-i18n="location_title">Nuestra ubicación en Alicante y alrededores</h3>
           <div class="aspect-w-16 aspect-h-9 bg-background border rounded-2xl overflow-hidden shadow-lg">
@@ -186,7 +207,26 @@
     </section>
 
     <!-- SOBRE NOSOTROS -->
-    <section id="sobre-nosotros" class="py-16 bg-white dark:bg-neutral"><!-- … sin cambios … --></section>
+    <section id="sobre-nosotros" class="py-16 bg-white dark:bg-neutral">
+      <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-10 reveal" data-i18n="about_title">Sobre nosotros 👷‍♂</h2>
+        <div class="flex flex-col md:flex-row items-center gap-10">
+          <div class="flex-1 flex justify-center gap-6 reveal">
+            <img src="foto 1.png" alt="Miembro del equipo trabajando" class="w-40 h-40 object-cover rounded-full shadow-lg" loading="lazy" />
+            <img src="foto 2.png" alt="Sonrisa del equipo tras terminar un proyecto" class="w-40 h-40 object-cover rounded-full shadow-lg" loading="lazy" />
+          </div>
+          <div class="flex-1 reveal">
+            <p class="text-lg leading-relaxed" data-i18n="about_desc">
+              Con años de experiencia en <span class="text-primary font-semibold">albañilería</span>,
+              <span class="text-primary font-semibold">cerramientos de aluminio</span> e
+              <span class="text-primary font-semibold">instalación de cortinas de vidrio</span>,
+              nuestro equipo se dedica a crear espacios que combinan funcionalidad y estética.
+              Tu satisfacción es nuestro mayor orgullo. 💪🏡
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- FOOTER -->
@@ -201,108 +241,121 @@
     /* ---------- Internationalisation ---------- */
     const translations = {
       es: {
-        brand:"Tu nuevo hogar",
-        tagline:"Atención al detalle en cada proyecto",
-        services_title:"Nuestros servicios",
-        projects_title:"Nuestros proyectos recientes",
-        projects_desc:"Estamos preparando una galería con nuestras últimas obras. ¡Vuelve pronto para inspirarte!",
-        cerramientos_title:"Cerramientos",
-        contact_title:"Contacta con nosotros",
-        location_title:"Nuestra ubicación en Alicante y alrededores",
-        about_title:"Sobre nosotros 👷‍♂️",
+        brand: "Tu nuevo hogar",
+        tagline: "Atención al detalle en cada proyecto",
+        services_title: "Nuestros servicios",
+        card1_title: "Reformas integrales de viviendas",
+        card1_desc: "Renovamos tu espacio por completo, cuidando cada detalle y acabados de alta calidad.",
+        card2_title: "Cerramientos en carpintería de aluminio",
+        card2_desc: "Aislamiento y elegancia para tu hogar con los mejores perfiles de aluminio.",
+        card3_title: "Instalación de cortinas de vidrio",
+        card3_desc: "Disfruta de vistas panorámicas y protección todo el año con nuestras cortinas de cristal.",
+        card4_title: "Trabajos de fontanería",
+        card4_desc: "Instalaciones y reparaciones confiables con materiales de primera calidad.",
+        card5_title: "Instalaciones eléctricas",
+        card5_desc: "Seguridad y eficiencia energética para tu vivienda.",
+        card6_title: "Carpintería de madera a medida",
+        card6_desc: "Muebles y acabados únicos que reflejan tu estilo personal.",
+        projects_title: "Nuestros proyectos recientes",
+        projects_desc: "Estamos preparando una galería con nuestras últimas obras. ¡Vuelve pronto para inspirarte!",
+        contact_title: "Contacta con nosotros",
+        location_title: "Nuestra ubicación en Alicante y alrededores",
+        about_title: "Sobre nosotros 👷‍♂",
+        about_desc: "Con años de experiencia en <span class='text-primary font-semibold'>albañilería</span>, <span class='text-primary font-semibold'>cerramientos de aluminio</span> e <span class='text-primary font-semibold'>instalación de cortinas de vidrio</span>, nuestro equipo se dedica a crear espacios que combinan funcionalidad y estética. Tu satisfacción es nuestro mayor orgullo. 💪🏡",
       },
       de: {
-        brand:"Dein neues Zuhause",
-        tagline:"Liebe zum Detail in jedem Projekt",
-        services_title:"Unsere Leistungen",
-        projects_title:"Unsere aktuellen Projekte",
-        projects_desc:"Wir bereiten eine Galerie unserer neuesten Arbeiten vor. Schau bald wieder vorbei und lass Dich inspirieren!",
-        cerramientos_title:"Einhausungen",
-        contact_title:"Kontaktiere uns",
-        location_title:"Unser Standort in Alicante und Umgebung",
-        about_title:"Über uns 👷‍♂️",
+        brand: "Dein neues Zuhause",
+        tagline: "Liebe zum Detail in jedem Projekt",
+        services_title: "Unsere Leistungen",
+        card1_title: "Komplettsanierungen von Wohnungen",
+        card1_desc: "Wir renovieren Deinen Raum vollständig mit Liebe zum Detail und hochwertigen Oberflächen.",
+        card2_title: "Aluminium-Fenster- und Türsysteme",
+        card2_desc: "Isolierung und Eleganz für Dein Zuhause mit den besten Aluminiumprofilen.",
+        card3_title: "Glasvorhänge Montage",
+        card3_desc: "Genieße Panoramablicke und ganzjährigen Schutz mit unseren Glasvorhängen.",
+        card4_title: "Sanitärarbeiten",
+        card4_desc: "Zuverlässige Installationen und Reparaturen mit Materialien erster Qualität.",
+        card5_title: "Elektroinstallationen",
+        card5_desc: "Sicherheit und Energieeffizienz für Dein Zuhause.",
+        card6_title: "Maßgefertigte Tischlerei",
+        card6_desc: "Einzigartige Möbel und Oberflächen, die Deinen Stil widerspiegeln.",
+        projects_title: "Unsere aktuellen Projekte",
+        projects_desc: "Wir bereiten eine Galerie unserer neuesten Arbeiten vor. Schau bald wieder vorbei und lass Dich inspirieren!",
+        contact_title: "Kontaktiere uns",
+        location_title: "Unser Standort in Alicante und Umgebung",
+        about_title: "Über uns 👷‍♂",
+        about_desc: "Mit jahrelanger Erfahrung in <span class='text-primary font-semibold'>Maurerarbeiten</span>, <span class='text-primary font-semibold'>Aluminiumkonstruktionen</span> und <span class='text-primary font-semibold'>Glasvorhängen</span> schaffen wir Räume, die Funktionalität und Ästhetik vereinen. Deine Zufriedenheit ist unser größter Stolz. 💪🏡",
       },
       en: {
-        brand:"Your new home",
-        tagline:"Attention to detail in every project",
-        services_title:"Our services",
-        projects_title:"Our recent projects",
-        projects_desc:"We're preparing a gallery of our latest work. Come back soon for inspiration!",
-        cerramientos_title:"Enclosures",
-        contact_title:"Get in touch",
-        location_title:"Our location in Alicante and surroundings",
-        about_title:"About us 👷‍♂️",
+        brand: "Your new home",
+        tagline: "Attention to detail in every project",
+        services_title: "Our services",
+        card1_title: "Full home renovations",
+        card1_desc: "We transform your space completely, caring for every detail with high-quality finishes.",
+        card2_title: "Aluminium joinery enclosures",
+        card2_desc: "Insulation and elegance for your home using premium aluminium profiles.",
+        card3_title: "Glass curtain installation",
+        card3_desc: "Enjoy panoramic views and year-round protection with our glass curtains.",
+        card4_title: "Plumbing works",
+        card4_desc: "Reliable installations and repairs using top-grade materials.",
+        card5_title: "Electrical installations",
+        card5_desc: "Safety and energy efficiency for your residence.",
+        card6_title: "Custom wood carpentry",
+        card6_desc: "Unique furniture and finishes that reflect your personal style.",
+        projects_title: "Our recent projects",
+        projects_desc: "We're preparing a gallery of our latest work. Come back soon for inspiration!",
+        contact_title: "Get in touch",
+        location_title: "Our location in Alicante and surroundings",
+        about_title: "About us 👷‍♂",
+        about_desc: "With years of experience in <span class='text-primary font-semibold'>masonry</span>, <span class='text-primary font-semibold'>aluminium enclosures</span> and <span class='text-primary font-semibold'>glass curtain installation</span>, our team creates spaces that combine functionality and aesthetics. Your satisfaction is our greatest pride. 💪🏡",
       }
     };
 
-    function setLang(lang){
-      document.querySelectorAll('[data-i18n]').forEach(el=>{
-        const key=el.dataset.i18n, t=translations[lang][key];
-        if(t){el.innerHTML=t;}
+    function setLang(lang) {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.dataset.i18n;
+        const t = translations[lang][key];
+        if (t) {
+          if (el.tagName.toLowerCase() === 'input') {
+            el.placeholder = t;
+          } else {
+            el.innerHTML = t;
+          }
+        }
       });
-      document.documentElement.lang=lang;
-      localStorage.setItem('lang',lang);
+      document.documentElement.lang = lang;
+      localStorage.setItem('lang', lang);
     }
-    document.querySelectorAll('#selector-idioma button').forEach(btn=>btn.addEventListener('click',()=>setLang(btn.dataset.lang)));
-    setLang(localStorage.getItem('lang')||'es');
+
+    document.querySelectorAll('#selector-idioma button').forEach(btn =>
+      btn.addEventListener('click', () => setLang(btn.dataset.lang))
+    );
+    setLang(localStorage.getItem('lang') || 'es');
 
     /* ---------- Dark mode toggle ---------- */
-    (()=>{const root=document.documentElement,toggle=document.getElementById('theme-toggle');
-      const prefersDark=window.matchMedia('(prefers-color-scheme: dark)').matches;
-      if(localStorage.theme==='dark'||(!('theme'in localStorage)&&prefersDark)){root.classList.add('dark')}
-      toggle.addEventListener('click',()=>{const isDark=root.classList.toggle('dark');localStorage.theme=isDark?'dark':'light';});
+    (() => {
+      const root = document.documentElement;
+      const toggle = document.getElementById('theme-toggle');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && prefersDark)) {
+        root.classList.add('dark');
+      }
+      toggle.addEventListener('click', () => {
+        const isDark = root.classList.toggle('dark');
+        localStorage.theme = isDark ? 'dark' : 'light';
+      });
     })();
 
     /* ---------- Scroll reveal ---------- */
-    const observer=new IntersectionObserver(entries=>{
-      entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('animate-fadeIn');observer.unobserve(entry.target);}});
-    },{threshold:.2});
-    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-
-    /* ---------- CERRAMIENTOS GALLERY ---------- */
-    const cerramientosData=[
-      {folder:'1.0', count:5, videos:[4]},
-      {folder:'2.0', count:7, videos:[1,5]},
-      {folder:'3.0', count:6, videos:[]},
-      {folder:'4.0', count:5, videos:[4,5]},
-      {folder:'5.0', count:6, videos:[6]},
-      {folder:'6.0', count:3, videos:[3]},
-      {folder:'7.0', count:6, videos:[3,4]},
-      {folder:'8.0', count:4, videos:[3]},
-      {folder:'9.0', count:2, videos:[2]},
-      {folder:'10.0',count:5, videos:[3,4]},
-      {folder:'11.0',count:4, videos:[4]},
-      {folder:'12.0',count:3, videos:[]},
-      {folder:'13.0',count:4, videos:[4]},
-      {folder:'14.0',count:3, videos:[3]},
-      {folder:'15.0',count:2, videos:[]},
-      {folder:'16.0',count:2, videos:[2]},
-      {folder:'17.0',count:3, videos:[3]},
-      {folder:'18.0',count:2, videos:[2]},
-      {folder:'19.0',count:2, videos:[]}
-    ];
-
-    function buildCerramientosGallery(){
-      const basePath='media/cerramientos/', gallery=document.getElementById('cerramientos-gallery');
-      cerramientosData.forEach(({folder,count,videos})=>{
-        const prefix=folder.split('.')[0];
-        const row=document.createElement('div');row.className='row-scroll';
-        for(let i=1;i<=count;i++){
-          const isVideo=videos.includes(i);
-          const file=`${basePath}${folder}/${prefix}.${i}.${isVideo?'mp4':'jpg'}`;
-          if(isVideo){
-            const vid=document.createElement('video');
-            vid.src=file;vid.controls=true;row.appendChild(vid);
-          }else{
-            const img=document.createElement('img');
-            img.src=file;img.alt=`${translations[document.documentElement.lang].cerramientos_title} ${prefix}.${i}`;
-            img.loading='lazy';row.appendChild(img);
-          }
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fadeIn');
+          observer.unobserve(entry.target);
         }
-        gallery.appendChild(row);
       });
-    }
-    document.addEventListener('DOMContentLoaded',buildCerramientosGallery);
+    }, { threshold: 0.2 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   </script>
 </body>
 </html>
