@@ -390,32 +390,27 @@ setLang(localStorage.getItem('lang')||'es');
     const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('animate-fadeIn');observer.unobserve(entry.target);}});},{threshold:.2});
     document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 
-    /* ---------- GALERÍA ALUMINIO ---------- */
-const aluminioData = [
-  {
-    folder: "a1.0",
-    count: 7,
-    videos: {
-      3: "https://youtube.com/shorts/dpf05BBMOdg"   // sustituye XXXXX por el ID real
-    }
-  }
-];
-
+   /* ---------- GALERÍA ALUMINIO ---------- */
 function buildAluminioGallery() {
   const gallery = document.getElementById("aluminio-gallery");
   if (!gallery) return;
 
-  const basePath = "cerramientos de aluminio/";      // misma carpeta donde guardas las fotos
+  // aquí cambia la ruta base al nombre exacto de tu carpeta en GitHub
+  const basePath = "cerramientos-de-aluminio/"; 
+
+  const aluminioData = [
+    { folder: "a1.0", count: 7, videos: { 3: "https://youtube.com/shorts/dpf05BBMOdg" } }
+  ];
+
   aluminioData.forEach(({ folder, count, videos }) => {
     const prefix = folder.split(".")[0];
     const row = document.createElement("div");
     row.className = "row-scroll";
 
     for (let i = 1; i <= count; i++) {
-      const vid = videos[i];
-      if (vid) {
+      if (videos[i]) {
         const iframe = document.createElement("iframe");
-        iframe.src = toEmbed(vid);
+        iframe.src = toEmbed(videos[i]);
         iframe.loading = "lazy";
         iframe.allowFullscreen = true;
         row.appendChild(iframe);
@@ -427,11 +422,11 @@ function buildAluminioGallery() {
         row.appendChild(img);
       }
     }
+
     gallery.appendChild(row);
   });
 }
 
-/* Lanza la galería al cargar la página */
 document.addEventListener("DOMContentLoaded", buildAluminioGallery);
     /* ---------- CERRAMIENTOS GALLERY ---------- */
   const cortinasData = [
@@ -439,7 +434,7 @@ document.addEventListener("DOMContentLoaded", buildAluminioGallery);
     { folder: '2.0', count: 7, videos: { 1: 'https://youtube.com/shorts/Ko_-ksafMe0?feature=share', 5: 'https://youtube.com/shorts/v_twrab3yKk?feature=share' } },
     { folder: '3.0', count: 6, videos: {} },
     { folder: '4.0', count: 5, videos: { 4: 'https://youtube.com/shorts/c4qTL4I0VoU?feature=share', 5: 'https://youtube.com/shorts/0_W0DUAi9BA?feature=share' } },
-    { folder: '5.0', count: 6, videos: { 6: 'https://youtube.com/shorts/RhlGepS9TSM?feature=share' } },
+    { folder: '5.0', count: 6, videos: {2: 'https://youtube.com/shorts/aG3iHgGZa74?feature=share', 6: 'https://youtube.com/shorts/RhlGepS9TSM?feature=share' } },
     { folder: '6.0', count: 3, videos: { 3: 'https://youtube.com/shorts/DwCUUxTB9rI?feature=share' } },
     { folder: '7.0', count: 6, videos: { 3: 'https://youtube.com/shorts/KFMG_xcLFbI?feature=share', 4: 'https://youtube.com/shorts/LvDBD0Plnt0?feature=share' } },
     { folder: '8.0', count: 4, videos: { 3: 'https://youtube.com/shorts/7ngyE7vk_lo?feature=share' } },
@@ -468,7 +463,7 @@ document.addEventListener("DOMContentLoaded", buildAluminioGallery);
   function buildCortinasGallery() {
     const gallery = document.getElementById('cortinas-gallery');
     if (!gallery) return;
-    const basePath = 'cortinas de cristal/'; // el nombre exacto de la carpeta
+    const basePath = 'corstinas de cristal/'; // el nombre exacto de la carpeta
     cortinasData.forEach(({ folder, count, videos }) => {
       const prefix = folder.split('.')[0];
       const row = document.createElement('div');
